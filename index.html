@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1ed7a56c8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- --------header------- -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="images/logo.png" class="logo"> -->
+            <h1><span>n</span>oah.</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1><span>Noah</span> Sivinski</h1>
+            <p>Software Engineer</p>
+        </div>
+    </div>
+</div>
+<!-----------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    My name is Noah Sivinski and I graduated in May 2023 from the 
+                    University of Georgia with a Bachelor in Computer Science degree. I 
+                    am currently looking for entry-level Software Engineer 
+                    Roles. 
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Java, Python, JavaScript, TypeScript, SQL, C++, React, HTML, Node.js, MongoDB, Solidity, MATLAB</li>
+                        <li><span>Technologies</span><br>AWS, Git, Node.js, NPM, REST API, Unix, Emacs, Salesforce, Jira, Figma, Shopify</li>
+                        <li><span>Interests</span><br>Generative AI, Machine Learning, Cloud Computing, Quant Finance, Fintech, Full Stack Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>01/2023 - 04/2023</span><br>Software Automation Engineer Co-Op at Nokia</li>
+                        <li><span>09/2022 - 12/2022</span><br>Research Assistant at the University Of Georgia - Thinc Lab</li>
+                        <li><span>06/2022 - 08/2022</span><br>Software Engineer Intern at Fiserv</li>
+                        <li><span>01/2022 - 08/2022</span><br>Software Engineer Intern at nCino</li>
+                        <li><span>01/2021 - 12/2021</span><br>Undergraduate Teaching Assistant at the University of Georgia</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019 - 2023</span><br>B.S. Computer Science from the University of Georgia<br>Minor in Cognitive Science<br>Certificate in Applied Data Science</li>
+                        <!-- <li><span>SWE</span><br>Coding</li> -->
+                        <!-- <li><span>SWE</span><br>Coding</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------services------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Development</h2>
+                <p>Designing websites.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2> 
+                <p>Designing websites.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Designing websites.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- -----------portfolio------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>AI-Enhanced Content Summarizer</h3>
+                    <p>Developed and deployed an AI-driven content summarization tool leveraging the OpenAI API, 
+                        enabling users to generate concise, contextually accurate summaries of lengthy articles, 
+                        research papers, and web content, with customizable summarization levels and multi-language 
+                        support.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Algorithmic Trading System</h3>
+                    <p>Constructed a functional matching engine that actively manages a live orderbook through 
+                        the implementation of various data structures and algorithms.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Artificial Intelligence Term Project</h3>
+                    <p>Created multiple machine learning models in Python, employing the Pandas data analysis 
+                        library and scikit-learn, to identify correlations and precisely predict the legal status 
+                        of marijuana in a state or country based on socioeconomic factors.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- -----------contact----- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> noahsivinski@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 6786305644</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Noah.Sivinki.Resume.pdf" download class="btn btn2">Download Resume/CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Noah Sivinski.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxCOJBC-3AUt5xzs92cWK6LVQd-OELRdvuID_BCJUV5hVJSwvb9s7SA6pzl6FrO4D8hAA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
